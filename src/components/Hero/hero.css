@@ -14,6 +14,8 @@
 
 .right-s{
     flex: 1;
+    position: relative;
+    background-color: var(--orange);
 }
 
 
@@ -101,3 +103,93 @@
     width: 8rem;
     border: 2px solid var(--orange);
 }
+
+
+.button{
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    cursor: pointer;
+    color: black;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight:bold;
+    font-family: Arial,  Helvetica, sans-serif;
+}
+.heart-rate{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--darkGrey);
+    width: fit-content;
+    padding: 1rem;
+    align-items: start;
+    position: absolute;
+    right: 4rem;
+    top: 7rem;
+    border-radius: 5px;
+}
+
+.heart-rate img{
+    width: 2rem;
+}
+
+.heart-rate span:nth-child(2){
+    color: var(--gray);
+}
+.heart-rate span:nth-child(3){
+    color:white;
+    font-size: 1.5rem;
+}
+
+.hero-img{
+    position: absolute;
+    top: 10rem;
+    right: 8rem;
+    width: 23rem;
+}
+.hero-img-back{
+    position: absolute;
+    top: 4rem;
+    right: 20rem;
+    z-index: -1;
+    width: 15rem;
+}
+
+.calories{
+    display: flex;
+    gap: 2rem;
+    background-color:var(--caloryCard) ;
+    border-radius: 5px;
+    padding: 1rem;
+    width: fit-content;
+    position: absolute;
+    top: 32rem;
+    right: 28rem;
+}
+
+.calories img{
+    width: 3rem;
+}
+.calories div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calories div :nth-last-of-type(2){
+    color: var(--gray);
+}
+
+.calories div :nth-last-of-type(1){
+    color: white;
+    font-style: 1.5rem;
+}
+
+
+
+
+
+
+
+
