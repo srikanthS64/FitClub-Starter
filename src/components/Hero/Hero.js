@@ -14,6 +14,8 @@ function Hero() {
         <div className='left-s'>
             <Header />
 
+            
+              {/*-----------Left Side------------ */}
             {/* the best ad */}
             <div className='the-best-ad'>
                 <div></div>
@@ -55,11 +57,9 @@ function Hero() {
              </div>
           </div>
 
-          {/* RIGHT SIDE */}
+          {/* ----------RIGHT SIDE----------- */}
         <div className='right-s'>
           <button className='button'>Join Now</button>
-
-
           <div className='heart-rate'>
             <img src={heart} alt=''/>
             <span>Heart Rate</span>

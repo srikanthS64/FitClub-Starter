@@ -1,10 +1,29 @@
 import React from 'react';
-import "./program.css";
+import "./programs.css";
+import {programsData} from "../../data/programsData";
+import RightArrow from "../../assets/rightArrow.png";
 
-
-function Programs() {
+const Programs = () => {
   return (
-    <div>program</div>
+    <div className='programs' id='programs'>
+      {/* header- section */}
+      <div className='programs-header'>
+        <span className='stroke-text'>EXPLORE OUR</span>
+        <span>PROGRAMS</span>
+        <span className='stroke-text'>TO SHAPE YOU</span>
+      </div>
+
+      <div className='program-categories'>
+        {programsData.map((program) => (
+          <div className='category'>
+            {program.image}
+            <span>{program.heading}</span>
+            <span>{program.details}</span>
+            <div className='join-now'><span>join Now</span><img src={RightArrow}/></div>
+          </div> 
+        ))} 
+      </div>
+    </div>
   );
 };
 
