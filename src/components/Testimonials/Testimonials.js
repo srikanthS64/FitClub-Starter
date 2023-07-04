@@ -1,5 +1,6 @@
 import React from 'react';
 import"./testimonials.css"
+import { testimonialsData } from '../../data/testimonialsData';
 
 
 const Testimonials = () => {
@@ -9,6 +10,9 @@ const Testimonials = () => {
         <span>TESTIMONIALS</span>
         <span className='stroke-text'>WHAT THEY</span>
         <span>SAY ABOUT US</span>
+        <span>
+            {testimonialsData[0].review}
+        </span>
       </div>
       <div className='right-t'></div>
     </div>
