@@ -11,6 +11,8 @@ function Hero() {
   return (
     <div>
       <div className='Hero'>
+
+        <div className='blur h-blur'></div>
         <div className='left-s'>
             <Header />
 
