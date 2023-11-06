@@ -3,7 +3,6 @@ import "./header.css";
 import logo from "../../assets/logo.png";
 import Bars from "../../assets/bars.png"
 import { useState } from 'react';
-import {link} from "react-scroll";
 
 function Header() {
 
